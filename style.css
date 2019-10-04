@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+	box-sizing: border-box;
+	font-family: 'Montserrat';
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color: #eceff4;
+}
+
+h1 {
+	text-align: left;
+	color: #636466;
+	margin: 0 0 20px 0;
+}
+
+.formulario {
+	background-color: #ffffff;
+	padding: 4%;
+	width: 480px;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, .5);
+	border-radius: 0px;
+}
+
+.formulario input[type="email"],
+.formulario input[type="password"],
+.formulario input[type="submit"] {
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 10px;
+	border-radius: 0px;
+	outline: none;
+}
+
+.formulario input[type="email"],
+.formulario input[type="password"] {
+	border: 1px solid #d1d0d5;
+}
+
+.formulario input[type="email"]:focus,
+.formulario input[type="password"]:focus {
+	border: 1px solid #2d86d5;
+}
+
+input[type="submit"] {
+	background: #26429f;
+	color: #ffffff;
+	border: none;
+}
+
+input[type="checkbox"] {
+	display: inline;
+	width: 10px;
+}
+
+.alignLeft {
+	text-align: left;
+	font-size: 12px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.alignLeft a {
+	color: #26429f;
+}
+
+@media screen and (max-width: 500px) {
+	.formulario {
+		width: 100%;
+		border-radius: 0;
+	}
+}
